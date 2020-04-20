@@ -1,7 +1,7 @@
 ---
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 # Madagascar_Forest_Fires
 This repository contains data and scripts to analyze forest loss and fire activity in Madagascar from 2000-2018
@@ -53,7 +53,6 @@ The columns in this data file are CassavaCultivation (class: number), MaizeCulti
 
 ## Scripts and code
 
-<list any software scripts/code contained in the repository and a description of their purpose.>
 The only software used in the repository is R. The various code files in the Code folder were created to conduct analysis on the 1) relationship between agricultural production and land management practices like deforestaion and slash-and-burn agriculture, 2) the relationship between deforestation and slash-and-burn agriculture, and 3) a time series analysis of deforestation and slash-and-burn agriculture.
 
 ## Quality assurance/quality control
