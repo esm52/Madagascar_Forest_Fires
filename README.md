@@ -9,7 +9,7 @@ This repository contains data and scripts to analyze forest loss and fire activi
 
 ## Summary
 
-The purpose of this repository is to contain data, code, and analyses for a project examining the impact of agricultural activity on deforestation and fire activity in Madagascar during the years 2000-2018. This repository contains a csv file of forest loss by year, fire activity by year, and agricultural productivity for Madagascar's main crops (cassava, maize, beans, sweet potatoes, rice, and vanilla) as well as scripts for data management, exploratory data analysis, and modeling. The goal of this analysis is to examine the relationship between forest loss and fire activity and identify the impact of agricultural productivity on land clearing practices. I am also interested in seeing if land clearing rates have changed over time through a time series analysis. 
+The purpose of this repository is to contain data, code, and analyses for a project examining the impact of agricultural activity on deforestation and fire activity in Madagascar during the years 2000-2018. This repository contains a csv file of forest loss by year, fire activity by year, and agricultural productivity for Madagascar's main crops (cassava, maize, sweet potatoes, bananas, rice, cloves, coffee, cocoa, and vanilla) as well as scripts for data management, exploratory data analysis, and modeling. The goal of this analysis is to examine the relationship between forest loss and fire activity and identify the impact of agricultural productivity on land clearing practices. I am also interested in seeing if land clearing rates have changed over time through a time series analysis. 
 
 ## Investigators
 
@@ -30,7 +30,7 @@ Fire Data
 As a measure of slash-and-burn agriculture, I used the MODIS Thermal Anomalies/Fire dataset produced by Giglio et al (2015) (accessed in January 2019). This dataset is derived from MODIS 4- and 11-micrometer radiances recorded by the Terra and Aqua remote sensors. The Thermal Anomalies/Fire dataset consists of daily records of fire presence around the globe in 1km resolution. Each daily record is an aggregation of 4 daily measurements, resulting in a comprehensive daily fire presence dataset for the interval 2000-2018. I used Google Earth Engine to filter this dataset by location, time, and confidence level, resulting in total fire area for each year. 
 
 Agricultural Data
-To gather information on agricultural productivity and its relationship to deforestation and slash-and-burn agriculture, I included total crop production for cassava, maize, beans, sweet potatoes, rice, and vanilla. These data were downloaded from the FAOSTAT Statistical Database operated by the Food and Agriculture Organization of the United Nations (accessed in April 2020).   
+To gather information on agricultural productivity and its relationship to deforestation and slash-and-burn agriculture, I included total crop production for cassava, maize, sweet potatoes, bananas, rice, cloves, coffee, cocoa, and vanilla. These data were downloaded from the FAOSTAT Statistical Database operated by the Food and Agriculture Organization of the United Nations (accessed in April 2020).   
 
 ## Folder structure, file formats, and naming conventions 
 

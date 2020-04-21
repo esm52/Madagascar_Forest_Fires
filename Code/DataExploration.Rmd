@@ -8,23 +8,67 @@ output: pdf_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+##Reading Data In
+```{r}
+getwd()
+library(tidyverse)
+library(ggridges)
+library(corrplot)
+library(ggplot2)
+library(GGally)
+FullData <- read.csv("../ProcessedData/FullData.csv")
+CropData <- read.csv("../RawData/CropData.csv")
 ```
 
-## Including Plots
+## Exploring Forest Loss Dataset
+```{r forest loss}
+TreeLossByYear <- ggplot(FullData, aes(x = Year, y = Tree.Loss, color = as.factor(Year) )) + 
+  geom_point() +
+  xlab("Year") +
+  ylab("Tree Loss")
+TreeLossByYear
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Exploring Crop Productivity Data
+### Crops included: cassava, maize, sweet potatoes, bananas, rice, cloves, coffee, cocoa, and vanilla
+
+```{r}
+CropPlot <- 
+  ggplot(CropData, aes(x = Year, y = Value, shape = Element, color = Item)) +
+  geom_point() 
+print(CropPlot)
+```
+
+## Exploring Population Data
+
+```{r}
+PopulationByYear <- 
+  ggplot(FullData, aes(x = Year, y = Population)) + 
+  geom_point() +
+  xlab("Year") +
+  ylab("Population") 
+PopulationByYear
+
+PopulationByTreeLoss <- ggplot(FullData, aes(x = Population, y = Tree.Loss, color = as.factor(Year) )) + 
+  geom_point() +
+  xlab("Population") +
+  ylab("Tree Loss")
+PopulationByTreeLoss
+```
+
+## Exploring Relationship Between Crops
+
+```{r}
+correlation <- ggcorr(FullData, nbreaks = 8, digits = 2, label = TRUE, label_size = 2, hjust = .9, layout.exp = 4, palette = "PiYG")
+print(correlation)
+
+```
+
+## Exploring Examine Relationship between Crop Cultivation Yield and Area
+
+```{r}
+
+```
+
+
