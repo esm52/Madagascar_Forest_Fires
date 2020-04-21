@@ -65,10 +65,55 @@ print(correlation)
 
 ```
 
-## Exploring Examine Relationship between Crop Cultivation Yield and Area
+## Examine Relationship between Crop Cultivation Yield and Area
+###Cassava <- 0.2
+###Cloves <- -0.3
+###Cocoa <- -0.3
+###Coffee <- -1, high, negative, correlation - what would cause this?
+###Maize <- 0.1
+###Rice <- -0.8, high, negative, correlation - what would cause this?
+###Sweet Potato <- 0.9, high positive correlation - NEED TO CHOOSE ONE FOR MODEL
+###Vanilla <- 0.8, high positive correlation - NEED TO CHOOSE ONE FOR MODEL
 
 ```{r}
+CassavaPlot <- ggplot(FullData, aes(x = CassavaArea, y = CassavaYield, color= as.factor(Year))) + 
+  geom_point()
+CassavaPlot
+
+ClovesPlot <- ggplot(FullData, aes(x = ClovesArea, y = ClovesYield, color= as.factor(Year))) + 
+  geom_point()
+ClovesPlot
+
+CocoaPlot <- ggplot(FullData, aes(x = CocoaArea, y = CocoaYield, color= as.factor(Year))) + 
+  geom_point()
+CocoaPlot
+
+CoffeePlot <- ggplot(FullData, aes(x = CoffeeArea, y = CoffeeYield, color= as.factor(Year))) + 
+  geom_point()
+CoffeePlot #very clear example of increased agricultural intensity over time less area needed to create higher yield
+
+MaizePlot <- ggplot(FullData, aes(x = MaizeArea, y = MaizeYield, color= as.factor(Year))) + 
+  geom_point()
+MaizePlot
+
+RicePlot <- ggplot(FullData, aes(x = RiceArea, y = RiceYield, color= as.factor(Year))) + 
+  geom_point()
+RicePlot #really interesting pattern of increased agricultural intensity - showing learning curve over time 
+
+SweetPotatoPlot <- ggplot(FullData, aes(x = SweetPotatoArea, y = SweetPotatoYield, color= as.factor(Year))) + 
+  geom_point()
+SweetPotatoPlot #shows opposite trend - relationship between area and yield appears to remain constant throughout years
+
+VanillaPlot <- ggplot(FullData, aes(x = VanillaArea, y = VanillaYield, color= as.factor(Year))) + 
+  geom_point()
+VanillaPlot #shows huge jump in vanilla yield around 2005, then yield and area seem to stabilize (indicating some sort of carryign capacity)
+
+
 
 ```
+## Creating Agricultural Intensity Variables
+```{r}
+CassavaIntensity <- FullData$CassavaYield/FullData$CassavaArea 
 
+```
 
