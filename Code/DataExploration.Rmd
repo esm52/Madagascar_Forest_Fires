@@ -113,7 +113,88 @@ VanillaPlot #shows huge jump in vanilla yield around 2005, then yield and area s
 ```
 ## Creating Agricultural Intensity Variables
 ```{r}
-CassavaIntensity <- FullData$CassavaYield/FullData$CassavaArea 
+CassavaIntensity <- FullData$CassavaYield/FullData$CassavaArea
+ClovesIntensity <- FullData$ClovesYield/FullData$ClovesArea
+CocoaIntensity <- FullData$CocoaYield/FullData$CocoaArea
+CoffeeIntensity <- FullData$CoffeeYield/FullData$CoffeeArea
+MaizeIntensity <- FullData$MaizeYield/FullData$MaizeArea
+RiceIntensity <- FullData$RiceYield/FullData$RiceArea
+SweetPotatoIntensity <- FullData$SweetPotatoYield/FullData$SweetPotatoArea
+VanillaIntensity <- FullData$VanillaYield/FullData$VanillaArea
 
 ```
+##Add Intensity Values to Full Dataset
+```{r}
+FullData$CassavaIntensity <- CassavaIntensity
+FullData$ClovesIntensity <- ClovesIntensity
+FullData$CocoaIntensity <- CocoaIntensity
+FullData$CoffeeIntensity <- CoffeeIntensity
+FullData$MaizeIntensity <- MaizeIntensity
+FullData$RiceIntensity <- RiceIntensity
+FullData$SweetPotatoIntensity <- SweetPotatoIntensity
+FullData$VanillaIntensity <- VanillaIntensity
+
+```
+
+###Plot Intensity Values Relative to one another 
+```{r}
+ 
+    geom_point(aes(y = CassavaIntensity, color = Item)) + 
+    geom_point(aes(y = ClovesIntensity, color = Year)) +
+    geom_point(aes(y = CocoaIntensity, color = Year)) +
+    geom_point(aes(y = CoffeeIntensity, color = Year))
+
+ggplot(FullData, ylab = "Yield per Area") +
+    geom_point(aes(x = Year, y = CassavaIntensity, color = "Cassava")) + 
+    geom_point(aes(x = Year, y = ClovesIntensity, color = "Cloves")) +
+    geom_point(aes(x = Year, y = CocoaIntensity, color = "Cocoa")) +
+    geom_point(aes(x = Year, y = CoffeeIntensity, color = "Coffee")) +
+    geom_point(aes(x = Year, y = MaizeIntensity, color = "Maize")) +
+    geom_point(aes(x = Year, y = RiceIntensity, color = "Rice")) +
+    geom_point(aes(x = Year, y = SweetPotatoIntensity, color = "Sweet Potato")) +
+    geom_point(aes(x = Year, y = VanillaIntensity, color = "Vanilla"))
+```
+##Plotting Crops Together 
+```{r}
+BigPlot <- 
+par(mfrow=c(4,2))
+CassavaPlot
+ClovesPlot
+CocoaPlot
+CoffeePlot
+MaizePlot
+RicePlot
+SweetPotatoPlot
+VanillaPlot
+
+```
+
+##Testing for Normality 
+```{r}
+#Crops
+hist(CassavaIntensity)
+hist(ClovesIntensity)
+hist(CocoaIntensity)
+hist(CoffeeIntensity)
+hist(MaizeIntensity)
+hist(RiceIntensity)
+hist(SweetPotatoIntensity)
+hist(VanillaIntensity)
+#Not exactly normal but good enough to move forward with linear regression
+
+#Population
+hist(FullData$Population)
+#Not exactly normal but need to scale 
+Scale.Pop <- scale(FullData$Population)
+
+#Forest Loss
+hist(FullData$Tree.Loss)
+Scale.Forest <- scale(FullData$Tree.Loss)
+
+
+```
+
+
+
+
 
