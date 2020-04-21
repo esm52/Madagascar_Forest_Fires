@@ -16,12 +16,16 @@ library(ggridges)
 library(corrplot)
 library(ggplot2)
 library(GGally)
+library(cowplot)
+library(ggpubr)
 FullData <- read.csv("../ProcessedData/FullData.csv")
 CropData <- read.csv("../RawData/CropData.csv")
 ```
 
 ## Exploring Forest Loss Dataset
 ```{r forest loss}
+FullData$Year <-as.factor(FullData$Year)
+
 TreeLossByYear <- ggplot(FullData, aes(x = Year, y = Tree.Loss, color = as.factor(Year) )) + 
   geom_point() +
   xlab("Year") +
@@ -50,7 +54,7 @@ PopulationByYear <-
   ylab("Population") 
 PopulationByYear
 
-PopulationByTreeLoss <- ggplot(FullData, aes(x = Population, y = Tree.Loss, color = as.factor(Year) )) + 
+PopulationByTreeLoss <- ggplot(FullData, aes(x = Population, y = Tree.Loss, color = Year )) + 
   geom_point() +
   xlab("Population") +
   ylab("Tree Loss")
@@ -76,36 +80,36 @@ print(correlation)
 ###Vanilla <- 0.8, high positive correlation - NEED TO CHOOSE ONE FOR MODEL
 
 ```{r}
-CassavaPlot <- ggplot(FullData, aes(x = CassavaArea, y = CassavaYield, color= as.factor(Year))) + 
-  geom_point()
+CassavaPlot <- ggplot(FullData, aes(x = CassavaArea, y = CassavaYield, color= Year)) + 
+  geom_point() + theme(legend.position="none") 
 CassavaPlot
 
-ClovesPlot <- ggplot(FullData, aes(x = ClovesArea, y = ClovesYield, color= as.factor(Year))) + 
-  geom_point()
+ClovesPlot <- ggplot(FullData, aes(x = ClovesArea, y = ClovesYield, color= Year)) + 
+  geom_point() + theme(legend.position="none")
 ClovesPlot
 
-CocoaPlot <- ggplot(FullData, aes(x = CocoaArea, y = CocoaYield, color= as.factor(Year))) + 
-  geom_point()
+CocoaPlot <- ggplot(FullData, aes(x = CocoaArea, y = CocoaYield, color= Year)) + 
+  geom_point() + theme(legend.position="none")
 CocoaPlot
 
-CoffeePlot <- ggplot(FullData, aes(x = CoffeeArea, y = CoffeeYield, color= as.factor(Year))) + 
-  geom_point()
+CoffeePlot <- ggplot(FullData, aes(x = CoffeeArea, y = CoffeeYield, color= Year)) + 
+  geom_point() + theme(legend.position="none")
 CoffeePlot #very clear example of increased agricultural intensity over time less area needed to create higher yield
 
-MaizePlot <- ggplot(FullData, aes(x = MaizeArea, y = MaizeYield, color= as.factor(Year))) + 
-  geom_point()
+MaizePlot <- ggplot(FullData, aes(x = MaizeArea, y = MaizeYield, color= Year)) + 
+  geom_point() + theme(legend.position="none")
 MaizePlot
 
-RicePlot <- ggplot(FullData, aes(x = RiceArea, y = RiceYield, color= as.factor(Year))) + 
-  geom_point()
+RicePlot <- ggplot(FullData, aes(x = RiceArea, y = RiceYield, color= Year)) + 
+  geom_point() + theme(legend.position="none")
 RicePlot #really interesting pattern of increased agricultural intensity - showing learning curve over time 
 
-SweetPotatoPlot <- ggplot(FullData, aes(x = SweetPotatoArea, y = SweetPotatoYield, color= as.factor(Year))) + 
-  geom_point()
+SweetPotatoPlot <- ggplot(FullData, aes(x = SweetPotatoArea, y = SweetPotatoYield, color= Year)) + 
+  geom_point() + theme(legend.position="none")
 SweetPotatoPlot #shows opposite trend - relationship between area and yield appears to remain constant throughout years
 
-VanillaPlot <- ggplot(FullData, aes(x = VanillaArea, y = VanillaYield, color= as.factor(Year))) + 
-  geom_point()
+VanillaPlot <- ggplot(FullData, aes(x = VanillaArea, y = VanillaYield, color= Year)) + 
+  geom_point() + theme(legend.position="none")
 VanillaPlot #shows huge jump in vanilla yield around 2005, then yield and area seem to stabilize (indicating some sort of carryign capacity)
 
 
@@ -145,28 +149,19 @@ FullData$VanillaIntensity <- VanillaIntensity
     geom_point(aes(y = CoffeeIntensity, color = Year))
 
 ggplot(FullData, ylab = "Yield per Area") +
-    geom_point(aes(x = Year, y = CassavaIntensity, color = "Cassava")) + 
+    #geom_point(aes(x = Year, y = CassavaIntensity, color = "Cassava")) + 
     geom_point(aes(x = Year, y = ClovesIntensity, color = "Cloves")) +
-    geom_point(aes(x = Year, y = CocoaIntensity, color = "Cocoa")) +
+    #geom_point(aes(x = Year, y = CocoaIntensity, color = "Cocoa")) +
     geom_point(aes(x = Year, y = CoffeeIntensity, color = "Coffee")) +
     geom_point(aes(x = Year, y = MaizeIntensity, color = "Maize")) +
     geom_point(aes(x = Year, y = RiceIntensity, color = "Rice")) +
-    geom_point(aes(x = Year, y = SweetPotatoIntensity, color = "Sweet Potato")) +
+    #geom_point(aes(x = Year, y = SweetPotatoIntensity, color = "Sweet Potato")) +
     geom_point(aes(x = Year, y = VanillaIntensity, color = "Vanilla"))
 ```
 ##Plotting Crops Together 
 ```{r}
-BigPlot <- 
-par(mfrow=c(4,2))
-CassavaPlot
-ClovesPlot
-CocoaPlot
-CoffeePlot
-MaizePlot
-RicePlot
-SweetPotatoPlot
-VanillaPlot
-
+BigPlot <- ggarrange(CassavaPlot, ClovesPlot, CocoaPlot, CoffeePlot, MaizePlot, RicePlot, SweetPotatoPlot, VanillaPlot, nrow = 4, ncol = 2, common.legend = T, legend = "right")
+print(BigPlot)
 ```
 
 ##Testing for Normality 
