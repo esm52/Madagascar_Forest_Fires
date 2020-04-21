@@ -9,22 +9,101 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+##Reading Data In
+```{r}
+getwd()
+library(tidyverse)
+library(lubridate)
+ForestData <- read.csv("../RawData/TreeLoss.csv")
+CropData <- read.csv("../RawData/CropData.csv")
+PopData <- read.csv("../RawData/PopulationData.csv")
 ```
 
-## Including Plots
+##Creating One Dataset
+### First step is to create a new dataset to contain all three datasets
+### Then isolate the yield and area data by crop 
+### The next step is to select columns from the crop datasets and add them to the full dataset
+### The last step is to add the population data from population dataset to the full dataset
+### Finally we write a new csv with the full dataset
 
-You can also embed plots, for example:
+```{r}
+#Create a full dataframe
+FullData <- as.data.frame(ForestData)
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+#Isolate crop area variables
+Cassava.Area <- 
+  CropData %>%
+  filter(Item == "Cassava" & Element=="Area harvested")
+Cloves.Area <- 
+  CropData %>%
+  filter(Item == "Cloves" & Element=="Area harvested")
+Cocoa.Area <- 
+  CropData %>%
+  filter(Item == "Cocoa, beans" & Element=="Area harvested")
+Coffee.Area <- 
+  CropData %>%
+  filter(Item == "Coffee, green" & Element=="Area harvested")
+Maize.Area <- 
+  CropData %>%
+  filter(Item == "Maize" & Element=="Area harvested")
+Rice.Area <- 
+  CropData %>%
+  filter(Item == "Rice, paddy" & Element=="Area harvested")
+SweetPotato.Area <- 
+  CropData %>%
+  filter(Item == "Sweet potatoes" & Element=="Area harvested")
+Vanilla.Area <- 
+  CropData %>%
+  filter(Item == "Vanilla" & Element=="Area harvested")
+
+#Isolate crop yield variables
+Cassava.Yield <- 
+  CropData %>%
+  filter(Item == "Cassava" & Element=="Yield")
+Cloves.Yield <- 
+  CropData %>%
+  filter(Item == "Cloves" & Element=="Yield")
+Cocoa.Yield <- 
+  CropData %>%
+  filter(Item == "Cocoa, beans" & Element=="Yield")
+Coffee.Yield <- 
+  CropData %>%
+  filter(Item == "Coffee, green" & Element=="Yield")
+Maize.Yield <- 
+  CropData %>%
+  filter(Item == "Maize" & Element=="Yield")
+Rice.Yield <- 
+  CropData %>%
+  filter(Item == "Rice, paddy" & Element=="Yield")
+SweetPotato.Yield <- 
+  CropData %>%
+  filter(Item == "Sweet potatoes" & Element=="Yield")
+Vanilla.Yield <- 
+  CropData %>%
+  filter(Item == "Vanilla" & Element=="Yield")
+
+#Adding crop data to full dataframe         
+FullData$CassavaArea <- Cassava.Area$Value
+FullData$CassavaYield <- Cassava.Yield$Value
+FullData$ClovesArea <- Cloves.Area$Value
+FullData$ClovesYield <- Cloves.Yield$Value
+FullData$CocoaArea <- Cocoa.Area$Value
+FullData$CocoaYield <- Cocoa.Yield$Value
+FullData$CoffeeArea <- Coffee.Area$Value
+FullData$CoffeeYield <- Coffee.Yield$Value
+FullData$MaizeArea <- Maize.Area$Value
+FullData$MaizeYield <- Maize.Yield$Value
+FullData$RiceArea <- Rice.Area$Value
+FullData$RiceYield <- Rice.Yield$Value
+FullData$SweetPotatoArea <- SweetPotato.Area$Value
+FullData$SweetPotatoYield <- SweetPotato.Yield$Value
+FullData$VanillaArea <- Vanilla.Area$Value
+FullData$VanillaYield <- Vanilla.Yield$Value
+
+#Adding Population Data
+FullData$Population <- PopData$Value
+
+#Writing a csv
+write.csv(FullData, row.names = FALSE, file = "../ProcessedData/FullData.csv")
+
 ```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

@@ -1,0 +1,289 @@
+Domain Code,Domain,Area Code,Area,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2001,2001,ha,351985,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2002,2002,ha,352345,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2003,2003,ha,352815,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2004,2004,ha,353290,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2005,2005,ha,388779,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2006,2006,ha,392250,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2007,2007,ha,394875,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2008,2008,ha,393815,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2009,2009,ha,402349,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2010,2010,ha,405816,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2011,2011,ha,472170,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2012,2012,ha,475658,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2013,2013,ha,401316,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2014,2014,ha,376591,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2015,2015,ha,350756,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2016,2016,ha,342163,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2017,2017,ha,326593,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,125,Cassava,2018,2018,ha,322007,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2001,2001,hg/ha,71320,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2002,2002,hg/ha,67157,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2003,2003,hg/ha,56466,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2004,2004,hg/ha,55178,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2005,2005,hg/ha,76239,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2006,2006,hg/ha,76035,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2007,2007,hg/ha,75811,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2008,2008,hg/ha,76713,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2009,2009,hg/ha,75058,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2010,2010,hg/ha,74144,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2011,2011,hg/ha,73920,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2012,2012,hg/ha,76133,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2013,2013,hg/ha,77609,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2014,2014,hg/ha,77796,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2015,2015,hg/ha,76319,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2016,2016,hg/ha,76849,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2017,2017,hg/ha,77243,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,125,Cassava,2018,2018,hg/ha,77638,Fc,Calculated data
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2001,2001,ha,79570,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2002,2002,ha,79225,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2003,2003,ha,78910,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2004,2004,ha,78900,F,FAO estimate
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2005,2005,ha,37231,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2006,2006,ha,36670,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2007,2007,ha,37415,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2008,2008,ha,36865,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2009,2009,ha,37900,F,FAO estimate
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2010,2010,ha,37949,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2011,2011,ha,43821,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2012,2012,ha,50900,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2013,2013,ha,57572,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2014,2014,ha,69619,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2015,2015,ha,72044,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2016,2016,ha,75733,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2017,2017,ha,79845,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,698,Cloves,2018,2018,ha,73832,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2001,2001,hg/ha,1487,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2002,2002,hg/ha,1486,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2003,2003,hg/ha,2401,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2004,2004,hg/ha,2288,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2005,2005,hg/ha,2652,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2006,2006,hg/ha,2700,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2007,2007,hg/ha,2686,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2008,2008,hg/ha,2751,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2009,2009,hg/ha,2700,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2010,2010,hg/ha,2729,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2011,2011,hg/ha,2843,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2012,2012,hg/ha,2931,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2013,2013,hg/ha,3001,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2014,2014,hg/ha,2973,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2015,2015,hg/ha,3035,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2016,2016,hg/ha,3069,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2017,2017,hg/ha,3114,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,698,Cloves,2018,2018,hg/ha,3159,Fc,Calculated data
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2001,2001,ha,4670,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2002,2002,ha,4670,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2003,2003,ha,4670,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2004,2004,ha,4680,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2005,2005,ha,7504,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2006,2006,ha,7511,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2007,2007,ha,7470,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2008,2008,ha,7530,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2009,2009,ha,9300,F,FAO estimate
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2010,2010,ha,11260,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2011,2011,ha,7294,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2012,2012,ha,9127,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2013,2013,ha,10300,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2014,2014,ha,12221,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2015,2015,ha,12916,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2016,2016,ha,12672,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2017,2017,ha,12296,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,661,"Cocoa, beans",2018,2018,ha,12783,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2001,2001,hg/ha,9443,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2002,2002,hg/ha,9443,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2003,2003,hg/ha,9443,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2004,2004,hg/ha,9421,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2005,2005,hg/ha,7811,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2006,2006,hg/ha,7801,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2007,2007,hg/ha,8655,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2008,2008,hg/ha,8586,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2009,2009,hg/ha,8602,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2010,2010,hg/ha,8881,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2011,2011,hg/ha,8911,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2012,2012,hg/ha,8765,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2013,2013,hg/ha,8738,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2014,2014,hg/ha,8890,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2015,2015,hg/ha,8931,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2016,2016,hg/ha,8822,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2017,2017,hg/ha,8811,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,661,"Cocoa, beans",2018,2018,hg/ha,8800,Fc,Calculated data
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2001,2001,ha,193355,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2002,2002,ha,193510,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2003,2003,ha,193670,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2004,2004,ha,193770,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2005,2005,ha,115020,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2006,2006,ha,115100,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2007,2007,ha,111685,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2008,2008,ha,117955,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2009,2009,ha,119000,F,FAO estimate
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2010,2010,ha,118482,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2011,2011,ha,110064,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2012,2012,ha,102181,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2013,2013,ha,96780,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2014,2014,ha,92639,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2015,2015,ha,89934,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2016,2016,ha,99552,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2017,2017,ha,110855,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,656,"Coffee, green",2018,2018,ha,106000,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2001,2001,hg/ha,3337,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2002,2002,hg/ha,3179,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2003,2003,hg/ha,3631,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2004,2004,hg/ha,3498,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2005,2005,hg/ha,4825,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2006,2006,hg/ha,5355,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2007,2007,hg/ha,5056,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2008,2008,hg/ha,4830,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2009,2009,hg/ha,4831,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2010,2010,hg/ha,4910,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2011,2011,hg/ha,5061,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2012,2012,hg/ha,5222,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2013,2013,hg/ha,5335,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2014,2014,hg/ha,5313,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2015,2015,hg/ha,5282,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2016,2016,hg/ha,5333,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2017,2017,hg/ha,5377,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,656,"Coffee, green",2018,2018,hg/ha,5420,Fc,Calculated data
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2001,2001,ha,193270,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2002,2002,ha,194405,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2003,2003,ha,195540,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2004,2004,ha,196660,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2005,2005,ha,252838,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2006,2006,ha,255070,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2007,2007,ha,257400,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2008,2008,ha,259730,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2009,2009,ha,262069,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2010,2010,ha,264429,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2011,2011,ha,277182,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2012,2012,ha,269997,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2013,2013,ha,229684,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2014,2014,ha,219005,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2015,2015,ha,196256,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2016,2016,ha,191017,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2017,2017,ha,169438,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,56,Maize,2018,2018,ha,129008,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2001,2001,hg/ha,9290,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2002,2002,hg/ha,8845,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2003,2003,hg/ha,16255,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2004,2004,hg/ha,17779,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2005,2005,hg/ha,15464,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2006,2006,hg/ha,15891,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2007,2007,hg/ha,16191,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2008,2008,hg/ha,16569,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2009,2009,hg/ha,16225,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2010,2010,hg/ha,15577,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2011,2011,hg/ha,15455,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2012,2012,hg/ha,16591,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2013,2013,hg/ha,16581,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2014,2014,hg/ha,16720,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2015,2015,hg/ha,16783,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2016,2016,hg/ha,16560,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2017,2017,hg/ha,16613,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,56,Maize,2018,2018,hg/ha,16666,Fc,Calculated data
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2001,2001,ha,1212650,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2002,2002,ha,1216020,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2003,2003,ha,1219400,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2004,2004,ha,1238000,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2005,2005,ha,1250000,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2006,2006,ha,1260660,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2007,2007,ha,1272030,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2008,2008,ha,1283560,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2009,2009,ha,1295186,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2010,2010,ha,1307043,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2011,2011,ha,1154562,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2012,2012,ha,1219523,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2013,2013,ha,921328,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2014,2014,ha,982147,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2015,2015,ha,908325,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2016,2016,ha,912563,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2017,2017,ha,730000,F,FAO estimate
+QC,Crops,129,Madagascar,5312,Area harvested,27,"Rice, paddy",2018,2018,ha,928184,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2001,2001,hg/ha,21956,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2002,2002,hg/ha,21414,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2003,2003,hg/ha,22962,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2004,2004,hg/ha,24475,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2005,2005,hg/ha,27140,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2006,2006,hg/ha,27667,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2007,2007,hg/ha,28268,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2008,2008,hg/ha,30495,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2009,2009,hg/ha,35056,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2010,2010,hg/ha,36249,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2011,2011,hg/ha,37245,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2012,2012,hg/ha,37315,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2013,2013,hg/ha,39189,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2014,2014,hg/ha,40502,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2015,2015,hg/ha,40980,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2016,2016,hg/ha,41815,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2017,2017,hg/ha,49322,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,27,"Rice, paddy",2018,2018,hg/ha,43418,Fc,Calculated data
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2001,2001,ha,91240,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2002,2002,ha,94490,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2003,2003,ha,105735,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2004,2004,ha,105735,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2005,2005,ha,123913,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2006,2006,ha,122400,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2007,2007,ha,122855,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2008,2008,ha,126669,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2009,2009,ha,127000,F,FAO estimate
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2010,2010,ha,127534,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2011,2011,ha,149982,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2012,2012,ha,145997,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2013,2013,ha,145696,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2014,2014,ha,147334,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2015,2015,ha,136665,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2016,2016,ha,142693,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2017,2017,ha,131410,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,122,Sweet potatoes,2018,2018,ha,137045,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2001,2001,hg/ha,57555,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2002,2002,hg/ha,52178,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2003,2003,hg/ha,46620,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2004,2004,hg/ha,51282,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2005,2005,hg/ha,70897,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2006,2006,hg/ha,72428,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2007,2007,hg/ha,72814,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2008,2008,hg/ha,71262,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2009,2009,hg/ha,71721,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2010,2010,hg/ha,72069,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2011,2011,hg/ha,73539,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2012,2012,hg/ha,75302,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2013,2013,hg/ha,76582,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2014,2014,hg/ha,77427,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2015,2015,hg/ha,77214,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2016,2016,hg/ha,78012,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2017,2017,hg/ha,78735,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,122,Sweet potatoes,2018,2018,hg/ha,79458,Fc,Calculated data
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2001,2001,ha,25750,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2002,2002,ha,25880,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2003,2003,ha,26050,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2004,2004,ha,26220,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2005,2005,ha,63764,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2006,2006,ha,64000,,Official data
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2007,2007,ha,67000,F,FAO estimate
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2008,2008,ha,69724,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2009,2009,ha,69639,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2010,2010,ha,68562,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2011,2011,ha,68777,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2012,2012,ha,71155,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2013,2013,ha,72364,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2014,2014,ha,76154,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2015,2015,ha,70324,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2016,2016,ha,66847,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2017,2017,ha,72917,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5312,Area harvested,692,Vanilla,2018,2018,ha,71964,Im,FAO data based on imputation methodology
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2001,2001,hg/ha,357,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2002,2002,hg/ha,340,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2003,2003,hg/ha,202,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2004,2004,hg/ha,320,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2005,2005,hg/ha,410,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2006,2006,hg/ha,396,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2007,2007,hg/ha,397,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2008,2008,hg/ha,385,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2009,2009,hg/ha,389,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2010,2010,hg/ha,400,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2011,2011,hg/ha,406,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2012,2012,hg/ha,412,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2013,2013,hg/ha,418,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2014,2014,hg/ha,412,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2015,2015,hg/ha,416,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2016,2016,hg/ha,422,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2017,2017,hg/ha,427,Fc,Calculated data
+QC,Crops,129,Madagascar,5419,Yield,692,Vanilla,2018,2018,hg/ha,431,Fc,Calculated data
