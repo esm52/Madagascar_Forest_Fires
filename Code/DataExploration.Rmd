@@ -150,11 +150,6 @@ FullData$VanillaIntensity <- VanillaIntensity
 
 ###Plot Intensity Values Relative to one another 
 ```{r}
- 
-    geom_point(aes(y = CassavaIntensity, color = Item)) + 
-    geom_point(aes(y = ClovesIntensity, color = Year)) +
-    geom_point(aes(y = CocoaIntensity, color = Year)) +
-    geom_point(aes(y = CoffeeIntensity, color = Year))
 
 ggplot(FullData) +
     geom_point(aes(x = Year, y = CassavaIntensity, color = "Cassava")) + 
@@ -165,16 +160,17 @@ ggplot(FullData) +
     geom_point(aes(x = Year, y = RiceIntensity, color = "Rice")) +
     geom_point(aes(x = Year, y = SweetPotatoIntensity, color = "Sweet Potato")) +
     geom_point(aes(x = Year, y = VanillaIntensity, color = "Vanilla")) +
-    geom_path(aes(x = Year, y = CassavaIntensity, color = "Cassava")) + 
-    geom_path(aes(x = Year, y = ClovesIntensity, color = "Cloves")) +
-    geom_path(aes(x = Year, y = CocoaIntensity, color = "Cocoa")) +
-    geom_path(aes(x = Year, y = CoffeeIntensity, color = "Coffee")) +
-    geom_path(aes(x = Year, y = MaizeIntensity, color = "Maize")) +
-    geom_path(aes(x = Year, y = RiceIntensity, color = "Rice")) +
-    geom_path(aes(x = Year, y = SweetPotatoIntensity, color = "Sweet Potato")) +
-    geom_path(aes(x = Year, y = VanillaIntensity, color = "Vanilla")) +
+    geom_path(aes(x = Year, y = CassavaIntensity, color = "Cassava", group = 1)) + 
+    geom_path(aes(x = Year, y = ClovesIntensity, color = "Cloves", group = 2)) +
+    geom_path(aes(x = Year, y = CocoaIntensity, color = "Cocoa", group = 3)) +
+    geom_path(aes(x = Year, y = CoffeeIntensity, color = "Coffee", group = 4)) +
+    geom_path(aes(x = Year, y = MaizeIntensity, color = "Maize", group = 5)) +
+    geom_path(aes(x = Year, y = RiceIntensity, color = "Rice", group = 6)) +
+    geom_path(aes(x = Year, y = SweetPotatoIntensity, color = "Sweet Potato", group = 7)) +
+    geom_path(aes(x = Year, y = VanillaIntensity, color = "Vanilla", group = 8)) +
     geom_point(aes(x = Year, y = Scale.Forest, color = "Forest Loss")) +
-    geom_path(aes(x = Year, y = Scale.Forest, color = "Forest Loss")) 
+    geom_path(aes(x = Year, y = Scale.Forest, color = "Forest Loss", group = 9)) +
+  labs(x = "Year", y = "Yield per Area")
 
     
 
@@ -208,6 +204,12 @@ FullData$Scale.Pop <- Scale.Pop
 hist(FullData$Tree.Loss)
 Scale.Forest <- scale(FullData$Tree.Loss)
 FullData$Scale.Forest <- Scale.Forest
+
+hist(FullData$Tree.Loss)
+Log.Forest <- log(Tree.Loss)
+hist(Log.Forest)
+FullData$Log.Forest <- Log.Forest
+
 
 ```
 ##Exporting Final Dataset with all components
