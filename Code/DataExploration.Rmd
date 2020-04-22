@@ -80,42 +80,42 @@ print(correlation)
 ###Vanilla <- 0.8, high positive correlation - NEED TO CHOOSE ONE FOR MODEL
 
 ```{r}
-CassavaPlot <- ggplot(FullData, aes(x = CassavaArea, y = CassavaYield, color= Year)) + 
+CassavaPlot <- ggplot(FullData, aes(x = CassavaArea, y = CassavaYield, color= Year, group = 1)) + 
   geom_point() + theme(legend.position="none") +
   geom_path()
 CassavaPlot
 
-ClovesPlot <- ggplot(FullData, aes(x = ClovesArea, y = ClovesYield, color= Year)) + 
+ClovesPlot <- ggplot(FullData, aes(x = ClovesArea, y = ClovesYield, color= Year, group = 1)) + 
   geom_point() + theme(legend.position="none") +
   geom_path()
 ClovesPlot
 
-CocoaPlot <- ggplot(FullData, aes(x = CocoaArea, y = CocoaYield, color= Year)) + 
+CocoaPlot <- ggplot(FullData, aes(x = CocoaArea, y = CocoaYield, color= Year, group = 1)) + 
   geom_point() + theme(legend.position="none") +
   geom_path()
 CocoaPlot
 
-CoffeePlot <- ggplot(FullData, aes(x = CoffeeArea, y = CoffeeYield, color= Year)) + 
+CoffeePlot <- ggplot(FullData, aes(x = CoffeeArea, y = CoffeeYield, color= Year, group = 1)) + 
   geom_point() + theme(legend.position="none") +
   geom_path()
 CoffeePlot #very clear example of increased agricultural intensity over time less area needed to create higher yield
 
-MaizePlot <- ggplot(FullData, aes(x = MaizeArea, y = MaizeYield, color= Year)) + 
+MaizePlot <- ggplot(FullData, aes(x = MaizeArea, y = MaizeYield, color= Year, group = 1)) + 
   geom_point() + theme(legend.position="none") +
   geom_path()
 MaizePlot
 
-RicePlot <- ggplot(FullData, aes(x = RiceArea, y = RiceYield, color= Year)) + 
+RicePlot <- ggplot(FullData, aes(x = RiceArea, y = RiceYield, color= Year, group = 1)) + 
   geom_point() + theme(legend.position="none") +
   geom_path()
 RicePlot #really interesting pattern of increased agricultural intensity - showing learning curve over time 
 
-SweetPotatoPlot <- ggplot(FullData, aes(x = SweetPotatoArea, y = SweetPotatoYield, color= Year)) + 
+SweetPotatoPlot <- ggplot(FullData, aes(x = SweetPotatoArea, y = SweetPotatoYield, color= Year, group = 1)) + 
   geom_point() + theme(legend.position="none") +
   geom_path()
 SweetPotatoPlot #shows opposite trend - relationship between area and yield appears to remain constant throughout years
 
-VanillaPlot <- ggplot(FullData, aes(x = VanillaArea, y = VanillaYield, color= Year)) + 
+VanillaPlot <- ggplot(FullData, aes(x = VanillaArea, y = VanillaYield, color= Year, group = 1)) + 
   geom_point() + theme(legend.position="none") +
   geom_path()
 VanillaPlot #shows huge jump in vanilla yield around 2005, then yield and area seem to stabilize (indicating some sort of carryign capacity)
@@ -172,7 +172,10 @@ ggplot(FullData) +
     geom_path(aes(x = Year, y = MaizeIntensity, color = "Maize")) +
     geom_path(aes(x = Year, y = RiceIntensity, color = "Rice")) +
     geom_path(aes(x = Year, y = SweetPotatoIntensity, color = "Sweet Potato")) +
-    geom_path(aes(x = Year, y = VanillaIntensity, color = "Vanilla"))
+    geom_path(aes(x = Year, y = VanillaIntensity, color = "Vanilla")) +
+    geom_point(aes(x = Year, y = Scale.Forest, color = "Forest Loss")) +
+    geom_path(aes(x = Year, y = Scale.Forest, color = "Forest Loss")) 
+
     
 
 ```

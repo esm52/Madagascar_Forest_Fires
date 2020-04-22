@@ -33,8 +33,8 @@ attach(CropData)
 ## Mixed Model
 
 ```{r }
-Full.Model <- lme(data = FullData, Scale.Forest ~ CassavaIntensity + ClovesIntensity + CocoaIntensity + CoffeeIntensity + MaizeIntensity + RiceIntensity + SweetPotatoIntensity + VanillaIntensity + Scale.Pop, 
-                   random = ~1|Year)
+Full.Model <- lm(data = FullData, Scale.Forest ~ CassavaIntensity + ClovesIntensity + CocoaIntensity + CoffeeIntensity + MaizeIntensity + RiceIntensity + SweetPotatoIntensity + VanillaIntensity + Scale.Pop)
+                   
 summary(Full.Model)
 rsquared(Full.Model)
 
@@ -43,6 +43,11 @@ TempTest.mixed <- lme(data = NTL.summertemp,
                      random = ~1|lakename)
 summary(TempTest.mixed)
 rsquared(TempTest.mixed)
+
+lm.full <- lmer(log.ForestLossByArea ~ (1|Fokotany) + (1|Year) + Vanilla.Suit + VanillaProduction + VanillaExportPrice + RiceArea + RiceProduction + log.Pop2009 + Before.2005 + Before.2015 + ProtectedArea) 
+
+summary(lm.full)
+plot(lm.full) 
 
 ```
 
