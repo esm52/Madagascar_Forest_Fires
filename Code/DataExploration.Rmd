@@ -81,35 +81,43 @@ print(correlation)
 
 ```{r}
 CassavaPlot <- ggplot(FullData, aes(x = CassavaArea, y = CassavaYield, color= Year)) + 
-  geom_point() + theme(legend.position="none") 
+  geom_point() + theme(legend.position="none") +
+  geom_path()
 CassavaPlot
 
 ClovesPlot <- ggplot(FullData, aes(x = ClovesArea, y = ClovesYield, color= Year)) + 
-  geom_point() + theme(legend.position="none")
+  geom_point() + theme(legend.position="none") +
+  geom_path()
 ClovesPlot
 
 CocoaPlot <- ggplot(FullData, aes(x = CocoaArea, y = CocoaYield, color= Year)) + 
-  geom_point() + theme(legend.position="none")
+  geom_point() + theme(legend.position="none") +
+  geom_path()
 CocoaPlot
 
 CoffeePlot <- ggplot(FullData, aes(x = CoffeeArea, y = CoffeeYield, color= Year)) + 
-  geom_point() + theme(legend.position="none")
+  geom_point() + theme(legend.position="none") +
+  geom_path()
 CoffeePlot #very clear example of increased agricultural intensity over time less area needed to create higher yield
 
 MaizePlot <- ggplot(FullData, aes(x = MaizeArea, y = MaizeYield, color= Year)) + 
-  geom_point() + theme(legend.position="none")
+  geom_point() + theme(legend.position="none") +
+  geom_path()
 MaizePlot
 
 RicePlot <- ggplot(FullData, aes(x = RiceArea, y = RiceYield, color= Year)) + 
-  geom_point() + theme(legend.position="none")
+  geom_point() + theme(legend.position="none") +
+  geom_path()
 RicePlot #really interesting pattern of increased agricultural intensity - showing learning curve over time 
 
 SweetPotatoPlot <- ggplot(FullData, aes(x = SweetPotatoArea, y = SweetPotatoYield, color= Year)) + 
-  geom_point() + theme(legend.position="none")
+  geom_point() + theme(legend.position="none") +
+  geom_path()
 SweetPotatoPlot #shows opposite trend - relationship between area and yield appears to remain constant throughout years
 
 VanillaPlot <- ggplot(FullData, aes(x = VanillaArea, y = VanillaYield, color= Year)) + 
-  geom_point() + theme(legend.position="none")
+  geom_point() + theme(legend.position="none") +
+  geom_path()
 VanillaPlot #shows huge jump in vanilla yield around 2005, then yield and area seem to stabilize (indicating some sort of carryign capacity)
 
 
@@ -148,15 +156,25 @@ FullData$VanillaIntensity <- VanillaIntensity
     geom_point(aes(y = CocoaIntensity, color = Year)) +
     geom_point(aes(y = CoffeeIntensity, color = Year))
 
-ggplot(FullData, ylab = "Yield per Area") +
-    #geom_point(aes(x = Year, y = CassavaIntensity, color = "Cassava")) + 
+ggplot(FullData) +
+    geom_point(aes(x = Year, y = CassavaIntensity, color = "Cassava")) + 
     geom_point(aes(x = Year, y = ClovesIntensity, color = "Cloves")) +
-    #geom_point(aes(x = Year, y = CocoaIntensity, color = "Cocoa")) +
+    geom_point(aes(x = Year, y = CocoaIntensity, color = "Cocoa")) +
     geom_point(aes(x = Year, y = CoffeeIntensity, color = "Coffee")) +
     geom_point(aes(x = Year, y = MaizeIntensity, color = "Maize")) +
     geom_point(aes(x = Year, y = RiceIntensity, color = "Rice")) +
-    #geom_point(aes(x = Year, y = SweetPotatoIntensity, color = "Sweet Potato")) +
-    geom_point(aes(x = Year, y = VanillaIntensity, color = "Vanilla"))
+    geom_point(aes(x = Year, y = SweetPotatoIntensity, color = "Sweet Potato")) +
+    geom_point(aes(x = Year, y = VanillaIntensity, color = "Vanilla")) +
+    geom_path(aes(x = Year, y = CassavaIntensity, color = "Cassava")) + 
+    geom_path(aes(x = Year, y = ClovesIntensity, color = "Cloves")) +
+    geom_path(aes(x = Year, y = CocoaIntensity, color = "Cocoa")) +
+    geom_path(aes(x = Year, y = CoffeeIntensity, color = "Coffee")) +
+    geom_path(aes(x = Year, y = MaizeIntensity, color = "Maize")) +
+    geom_path(aes(x = Year, y = RiceIntensity, color = "Rice")) +
+    geom_path(aes(x = Year, y = SweetPotatoIntensity, color = "Sweet Potato")) +
+    geom_path(aes(x = Year, y = VanillaIntensity, color = "Vanilla"))
+    
+
 ```
 ##Plotting Crops Together 
 ```{r}
@@ -181,14 +199,18 @@ hist(VanillaIntensity)
 hist(FullData$Population)
 #Not exactly normal but need to scale 
 Scale.Pop <- scale(FullData$Population)
+FullData$Scale.Pop <- Scale.Pop
 
 #Forest Loss
 hist(FullData$Tree.Loss)
 Scale.Forest <- scale(FullData$Tree.Loss)
-
+FullData$Scale.Forest <- Scale.Forest
 
 ```
-
+##Exporting Final Dataset with all components
+```{r}
+write.csv(FullData, row.names = FALSE, file = "../ProcessedData/FullData.csv")
+```
 
 
 

@@ -9,22 +9,40 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 ```{r cars}
-summary(cars)
+getwd()
+library(tidyverse)
+library(ggridges)
+library(corrplot)
+library(ggplot2)
+library(GGally)
+library(cowplot)
+library(ggpubr)
+library(nlme)
+library(lmtest)
+library(lme4)
+library(lmerTest)
+library(dplyr)
+FullData <- read.csv("../ProcessedData/FullData.csv")
+attach(FullData)
+CropData <- read.csv("../RawData/CropData.csv")
+attach(CropData)
 ```
 
-## Including Plots
+## Mixed Model
 
-You can also embed plots, for example:
+```{r }
+Full.Model <- lme(data = FullData, Scale.Forest ~ CassavaIntensity + ClovesIntensity + CocoaIntensity + CoffeeIntensity + MaizeIntensity + RiceIntensity + SweetPotatoIntensity + VanillaIntensity + Scale.Pop, 
+                   random = ~1|Year)
+summary(Full.Model)
+rsquared(Full.Model)
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+TempTest.mixed <- lme(data = NTL.summertemp,
+                     temperature_C ~ year4, 
+                     random = ~1|lakename)
+summary(TempTest.mixed)
+rsquared(TempTest.mixed)
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
