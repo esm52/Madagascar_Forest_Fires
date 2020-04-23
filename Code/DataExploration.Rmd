@@ -36,12 +36,35 @@ TreeLossByYear
 
 ## Exploring Crop Productivity Data
 ### Crops included: cassava, maize, sweet potatoes, bananas, rice, cloves, coffee, cocoa, and vanilla
-
+### Scale crops to make them comparable
+### Add scaled values to dataset
 ```{r}
 CropPlot <- 
   ggplot(CropData, aes(x = Year, y = Value, shape = Element, color = Item)) +
-  geom_point() 
+  geom_point() +
+  geom_path()
 print(CropPlot)
+
+Scale.CassavaArea <- scale(FullData$CassavaArea)
+Scale.ClovesArea <- scale(FullData$ClovesArea)
+Scale.CocoaArea <- scale(FullData$CocoaArea)
+Scale.CoffeeArea <- scale(FullData$CoffeeArea)
+Scale.MaizeArea <- scale(FullData$MaizeArea)
+Scale.RiceArea <- scale(FullData$RiceArea)
+Scale.SweetPotatoArea <- scale(FullData$SweetPotatoArea)
+Scale.VanillaArea <- scale(FullData$VanillaArea)
+
+FullData$Scale.CassavaArea <- Scale.CassavaArea
+FullData$Scale.ClovesArea <- Scale.ClovesArea
+FullData$Scale.CocoaArea <- Scale.CocoaArea
+FullData$Scale.CoffeeArea <- Scale.CoffeeArea
+FullData$Scale.MaizeArea <- Scale.MaizeArea
+FullData$Scale.RiceArea <- Scale.RiceArea
+FullData$Scale.SweetPotatoArea <- Scale.SweetPotatoArea
+FullData$Scale.VanillaArea <- Scale.VanillaArea
+
+
+
 ```
 
 ## Exploring Population Data
@@ -176,9 +199,9 @@ ggplot(FullData) +
     geom_path(aes(x = Year, y = RiceIntensity, color = "Rice", group = 6)) +
     geom_path(aes(x = Year, y = SweetPotatoIntensity, color = "Sweet Potato", group = 7)) +
     geom_path(aes(x = Year, y = VanillaIntensity, color = "Vanilla", group = 8)) +
-    geom_point(aes(x = Year, y = Scale.Forest, color = "Forest Loss")) +
-    geom_path(aes(x = Year, y = Scale.Forest, color = "Forest Loss", group = 9)) +
-  labs(x = "Year", y = "Yield per Area")
+    #geom_point(aes(x = Year, y = Scale.Forest, color = "Scaled Forest Loss")) +
+    geom_line(aes(x = Year, y = Scale.Forest, color = " Scaled Forest Loss", group = 9)) +
+  labs(x = "Year", y = "Yield per Area") 
 
     
 

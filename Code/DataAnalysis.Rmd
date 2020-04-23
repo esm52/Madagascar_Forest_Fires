@@ -24,6 +24,8 @@ library(lmtest)
 library(lme4)
 library(lmerTest)
 library(dplyr)
+library(trend)
+library(MuMIn)
 FullData <- read.csv("../ProcessedData/FullData.csv")
 attach(FullData)
 CropData <- read.csv("../RawData/CropData.csv")
@@ -36,18 +38,61 @@ attach(CropData)
 Full.Model <- lm(data = FullData, Scale.Forest ~ CassavaIntensity + ClovesIntensity + CocoaIntensity + CoffeeIntensity + MaizeIntensity + RiceIntensity + SweetPotatoIntensity + VanillaIntensity + Scale.Pop)
                    
 summary(Full.Model)
-rsquared(Full.Model)
+r.squaredGLMM(Full.Model)
 
-TempTest.mixed <- lme(data = NTL.summertemp,
-                     temperature_C ~ year4, 
-                     random = ~1|lakename)
-summary(TempTest.mixed)
-rsquared(TempTest.mixed)
+plot(Full.Model) 
 
-lm.full <- lmer(log.ForestLossByArea ~ (1|Fokotany) + (1|Year) + Vanilla.Suit + VanillaProduction + VanillaExportPrice + RiceArea + RiceProduction + log.Pop2009 + Before.2005 + Before.2015 + ProtectedArea) 
+ggplot(FullData) +
+    geom_point(aes(x = Year, y = Scale.CassavaArea, color = "Cassava")) + 
+    geom_point(aes(x = Year, y = Scale.ClovesArea, color = "Cloves")) +
+    geom_point(aes(x = Year, y = Scale.CocoaArea, color = "Cocoa")) +
+    geom_point(aes(x = Year, y = Scale.CoffeeArea, color = "Coffee")) +
+    geom_point(aes(x = Year, y = Scale.MaizeArea, color = "Maize")) +
+    geom_point(aes(x = Year, y = Scale.RiceArea, color = "Rice")) +
+    geom_point(aes(x = Year, y = Scale.SweetPotatoArea, color = "Sweet Potato")) +
+    geom_point(aes(x = Year, y = Scale.VanillaArea, color = "Vanilla")) +
+    geom_path(aes(x = Year, y = Scale.CassavaArea, color = "Cassava", group = 1)) + 
+    geom_path(aes(x = Year, y = Scale.ClovesArea, color = "Cloves", group = 2)) +
+    geom_path(aes(x = Year, y = Scale.CocoaArea, color = "Cocoa", group = 3)) +
+    geom_path(aes(x = Year, y = Scale.CoffeeArea, color = "Coffee", group = 4)) +
+    geom_path(aes(x = Year, y = Scale.MaizeArea, color = "Maize", group = 5)) +
+    geom_path(aes(x = Year, y = Scale.RiceArea, color = "Rice", group = 6)) +
+    geom_path(aes(x = Year, y = Scale.SweetPotatoArea, color = "Sweet Potato", group = 7)) +
+    geom_path(aes(x = Year, y = Scale.VanillaArea, color = "Vanilla", group = 8)) +
+    #geom_point(aes(x = Year, y = Scale.Forest, color = "Scaled Forest Loss")) +
+    geom_line(aes(x = Year, y = Scale.Forest, color = " Scaled Forest Loss", group = 9)) +
+  labs(x = "Year", y = "Crop Area (Scaled)")
+#This plot show no obvious relationship between area of crop cultivation and forest loss
 
-summary(lm.full)
-plot(lm.full) 
+Area.Model <- lm(data = FullData, Scale.Forest ~ Scale.CassavaArea + Scale.ClovesArea + Scale.CocoaArea + Scale.CoffeeArea + Scale.MaizeArea + Scale.RiceArea + Scale.SweetPotatoArea + Scale.VanillaArea + Scale.Pop)
+                   
+summary(Area.Model)
+r.squaredGLMM(Area.Model)
+
+```
+##Time Series Analysis
+```{r}
+#Creating a time series object for forest loss 
+ForestLossTime <- ts(FullData$Tree.Loss, start = c(2001,1))
+ForestLossTime
+#Visualize the time series
+plot.ts(ForestLossTime)
+#Pettitt.test for change point detection
+ts.test <- pettitt.test(ForestLossTime)
+ts.test
+#p-value = 0.01278
+
+#Not enough data for a monotonic trend analysis
+
+TreeLossTrend <- ggplot(FullData, aes(x = Year, y = Tree.Loss, color = as.factor(Year), group = 1 )) + 
+  geom_point() +
+  geom_path() +
+  xlab("Year") +
+  ylab("Tree Loss") +
+  geom_point()
+TreeLossTrend
+
+
 
 ```
 
